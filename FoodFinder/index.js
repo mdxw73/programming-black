@@ -1,6 +1,8 @@
-const express = require('express')
 var recipes = require('./potato_recipes.json')
+const express = require('express')
+var bodyParser = require('body-parser')
 const app = express()
+app.use(bodyParser.urlencoded({extended: false}))
 app.get('/', function(req, resp){
     resp.send('Hello world')
 })
@@ -17,5 +19,10 @@ app.get('/potato', function(req, resp){
         }
     }
     resp.send(results)
+})
+app.post('/new', function(req, res){
+    let recipe = {"title": req.body.title, "href": req.body.href, "ingredients": req.body.ingredients, "title": req.body.thumbnail}
+    recipes.push(recipe)
+    res.send(recipes)
 })
 app.listen(8090)
