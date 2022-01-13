@@ -1,0 +1,47 @@
+#citations {
+    text-align: right;
+}
+.subscript {
+    font-size: x-small;
+    color: gray;
+    font-style: italic;
+}
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    min-height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.bgimg-1 {
+    padding-top: 56px;
+    background-image: url("https://cdn.wallpapersafari.com/19/77/dpaHeX.png");
+}
+.bgimg-2 {
+    background-image: url("https://wallpaperaccess.com/full/215112.jpg");
+}
+.bgimg-3 {
+    background-image: url("https://external-preview.redd.it/LRmT8yJPpoqGulM3_Js5IskqmxqPwgb196NFUtX08oY.jpg?auto=webp&s=8cafc04e8600b49eee044ec92d833b986e2c33d9");
+}
+body, html {
+    height: 100%;
+}
+.caption {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 28px;
+    letter-spacing: 10px;
+    border-radius: 12px;
+}
+.fixed{
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}

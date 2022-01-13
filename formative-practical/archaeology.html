@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link href="style.css" rel="stylesheet">
+    <title>Archaeology</title>
+  </head>
+  <body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="foresters.html">Robot Foresters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bci.html">Brain-Computer Interface</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Archaeology</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-4">
+          <h2>Machine Learning in Archaeology</h2>
+          <img src="https://static01.nyt.com/images/2021/06/01/multimedia/25xp-archeology-1-02/25xp-archeology-1-02-jumbo.jpg?quality=75&auto=webp" alt = "comparisons of various ancient pottery styles" height="auto" width="100%">
+          <p class="subscript">Credit: Leszek Pawlowicz and Christian Downum/Northern Arizona University</p>
+          <h4 class="mt-4">More Information</h4>
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="https://www.sciencedirect.com/science/article/pii/S0305440321000455">Original Paper</a>
+            </li>
+          </ul>
+          <hr class="d-sm-none">
+        </div>
+        <div class="col-sm-8">
+          <h5>Summary</h5>
+          <p>A study in The Journal of Archaeological Science found that a deep-learning model is just as accurate as human experts in categorising archeological pottery fragments, whilst being much faster.</p>
+    
+          <h5 class="mt-5">Arizonan Pottery</h5>
+          <p>Tusayan White Ware is a type of painted, hand-formed pottery used for containers and crockery in northeastern Arizona between the years 825 and 1300. Pieces have distinctive patterns based on when they were created, so experts in ceramic analyis can work out when they were created.</p>
+          <p>However, this is a long, painstaking process, and it's difficult for the human archaeologists to explain why they chose the category they did. Not so for neural networks.
+          </p>
+
+          <h5 class="mt-5">Man vs Machine</h5>
+          <p>For their case study, researchers Christian Downum and Leszek Pawlowicz recruited four of the greatest names in pottery analysis, each having at least 30 years experience and classifying tens of thousands of fragments. They also trained a sophisticated machine-learning algorithm over the course of several hours. The task: to classify thousands of images into nine categories.</p>
+          <p>When ranked on their accuracy, the program tied two of the humans and beat the other two - despite categorising the images in only a few minutes, rather than the 3 hours over the course of several months the analysts took. It was also better able to explain why it had made the decisions it had, even discovering a new distinction between categories.</p>
+
+          <h5 class="mt-5">A Replacement?</h5>
+          <p>In many previous studies, neural networks have been used to identify things from pictures or to categorise objects - however, this is the first paper to explicitly put the programs and professors head-to-head. Some archaeologists have had concerns about being replaced by neural networks, but the authors of the paper said that they weren't worried. "We're the ones who decide what's important to study," Dr. Downum said. He elaborated that it would improve the field by freeing up time and replacing a subjective analysis with one that gives the same result every time.</p>          
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5 p-4 bg-dark text-white text-center"></div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>About the Author</h2>
+          <h5>Edward Rivers</h5>
+          <p>Edward Rivers is a Computer Science student at Durham University. He is fluent in Python, and is also learning HTML, CSS, and JavaScript.</p>
+          <p><a class="nav-link" href="https://github.com/ixrisor81">GitHub</a></p>
+          <hr class="d-sm-none">
+        </div>
+        <div class="col-sm-6" id="citations">
+            <h3 class>Citations:</h3>
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.nytimes.com/2021/05/25/science/archaeologist-neural-network-study.html">Archaeologists vs. Computers: A Study Tests Who’s Best at Sifting the Past</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.sciencedirect.com/science/article/pii/S0305440321000455">Applications of deep learning to decorated ceramic typology and classification: A case study using Tusayan White Ware from Northeast Arizona
+                </a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mt-5 p-4 bg-dark text-white text-center"></div>
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
